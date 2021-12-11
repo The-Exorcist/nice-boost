@@ -1,17 +1,372 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('_head.html',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('_header.html',{})
-			<main class="page">
-
-			</main>
-			@@include('_footer.html',{})
-		</div>
-		@@include('_popup.html',{})
-		@@include('_js.html',{})
-	</body>
+    @@include('_head.html',{ "title":"Главная" })
+    <body>
+        <div class="wrapper">
+            @@include('_header.html',{})
+            <main class="page">
+                <section class="page__home home-page">
+                    <div class="home-page__container _container">
+                        <div class="home-page__bg _ibg">
+                            <img src="img/home-page/bg2.jpg" alt="bg" />
+                        </div>
+                        <h1 class="home-page__title">NICE AND FRIENDLY BOOSTING SERVICE</h1>
+                        <p class="home-page__text"><span>Join nice-boost</span>, upgrade your account and enjoy the game with us.Simple, fast and safe</p>
+                        <a class="home-page__button" href="#">Get services now</a>
+                        <div class="home-page__categories categories-home-page">
+                            <div class="categories-home-page__item">TBC Classic</div>
+                            <div class="categories-home-page__item">Shadowlands</div>
+                            <div class="categories-home-page__item">Torghast</div>
+                            <div class="categories-home-page__item">Castle Nathria</div>
+                            <div class="categories-home-page__item">Farming</div>
+                            <div class="categories-home-page__item">Gearing</div>
+                            <div class="categories-home-page__item _active">Raids</div>
+                            <div class="categories-home-page__item">Mounts</div>
+                            <div class="categories-home-page__item">PvP</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__services services">
+                    <div class="services__container _container">
+                        <h3 class="services__title _title">Most popular services</h3>
+                        <div class="services__body">
+                            <div class="services__column">
+                                <div class="services__item item-services">
+                                    <div class="item-services__bg">
+                                        <img src="img/home-page/services/1.jpg" alt="Shadowland Powerleveling" />
+                                    </div>
+                                    <div class="item-services__body">
+                                        <div class="item-services__header item-header">
+                                            <div class="item-header__speed">
+                                                <span></span>
+                                                12 hours
+                                            </div>
+                                            <div class="item-header__server">TBC Classic</div>
+                                            <div class="item-header__availability">
+                                                <span></span>
+                                                Out of stock
+                                            </div>
+                                        </div>
+                                        <div class="item-services__content">
+                                            <div class="item-services__info">
+                                                <div class="item-services__title">Shadowland Powerleveling</div>
+                                                <ul class="item-services__features">
+                                                    <li class="item-services__feature">Any KEY level</li>
+                                                    <li class="item-services__feature">Best Gear</li>
+                                                    <li class="item-services__feature">Fast Boost</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-services__footer item-footer">
+                                                <div class="item-footer__price">
+                                                    <span>Price</span>
+                                                    € 25
+                                                </div>
+                                                <a class="item-footer__button" href="#">Buy now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__column">
+                                <div class="services__item item-services">
+                                    <div class="item-services__bg">
+                                        <img src="img/home-page/services/2.jpg" alt="Shadowland Powerleveling" />
+                                    </div>
+                                    <div class="item-services__body">
+                                        <div class="item-services__header item-header">
+                                            <div class="item-header__speed">
+                                                <span></span>
+                                                12 hours
+                                            </div>
+                                            <div class="item-header__server">TBC Classic</div>
+                                        </div>
+                                        <div class="item-services__content">
+                                            <div class="item-services__info">
+                                                <div class="item-services__title">Shadowland Powerleveling</div>
+                                                <ul class="item-services__features">
+                                                    <li class="item-services__feature">Any KEY level</li>
+                                                    <li class="item-services__feature">Best Gear</li>
+                                                    <li class="item-services__feature">Fast Boost</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-services__footer item-footer">
+                                                <div class="item-footer__price">
+                                                    <span>Price</span>
+                                                    € 25
+                                                </div>
+                                                <a class="item-footer__button" href="#">Buy now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__column">
+                                <div class="services__item item-services">
+                                    <div class="item-services__bg">
+                                        <img src="img/home-page/services/3.jpg" alt="Shadowland Powerleveling" />
+                                    </div>
+                                    <div class="item-services__body">
+                                        <div class="item-services__header item-header">
+                                            <div class="item-header__speed">
+                                                <span></span>
+                                                12 hours
+                                            </div>
+                                            <div class="item-header__server">TBC Classic</div>
+                                        </div>
+                                        <div class="item-services__content">
+                                            <div class="item-services__info">
+                                                <div class="item-services__title">Shadowland Powerleveling</div>
+                                                <ul class="item-services__features">
+                                                    <li class="item-services__feature">Any KEY level</li>
+                                                    <li class="item-services__feature">Best Gear</li>
+                                                    <li class="item-services__feature">Fast Boost</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-services__footer item-footer">
+                                                <div class="item-footer__price">
+                                                    <span>Price</span>
+                                                    € 25
+                                                </div>
+                                                <a class="item-footer__button" href="#">Buy now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__column">
+                                <div class="services__item item-services">
+                                    <div class="item-services__bg">
+                                        <img src="img/home-page/services/4.jpg" alt="Shadowland Powerleveling" />
+                                    </div>
+                                    <div class="item-services__body">
+                                        <div class="item-services__header item-header">
+                                            <div class="item-header__speed">
+                                                <span></span>
+                                                12 hours
+                                            </div>
+                                            <div class="item-header__server">TBC Classic</div>
+                                            <div class="item-header__availability">
+                                                <span></span>
+                                                Out of stock
+                                            </div>
+                                        </div>
+                                        <div class="item-services__content">
+                                            <div class="item-services__info">
+                                                <div class="item-services__title">Shadowland Powerleveling</div>
+                                                <ul class="item-services__features">
+                                                    <li class="item-services__feature">Any KEY level</li>
+                                                    <li class="item-services__feature">Best Gear</li>
+                                                    <li class="item-services__feature">Fast Boost</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-services__footer item-footer">
+                                                <div class="item-footer__price">
+                                                    <span>Price</span>
+                                                    € 25
+                                                </div>
+                                                <a class="item-footer__button" href="#">Buy now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__column">
+                                <div class="services__item item-services">
+                                    <div class="item-services__bg">
+                                        <img src="img/home-page/services/5.jpg" alt="Shadowland Powerleveling" />
+                                    </div>
+                                    <div class="item-services__body">
+                                        <div class="item-services__header item-header">
+                                            <div class="item-header__speed">
+                                                <span></span>
+                                                12 hours
+                                            </div>
+                                            <div class="item-header__server">TBC Classic</div>
+                                            <div class="item-header__availability">
+                                                <span></span>
+                                                Out of stock
+                                            </div>
+                                        </div>
+                                        <div class="item-services__content">
+                                            <div class="item-services__info">
+                                                <div class="item-services__title">Shadowland Powerleveling</div>
+                                                <ul class="item-services__features">
+                                                    <li class="item-services__feature">Any KEY level</li>
+                                                    <li class="item-services__feature">Best Gear</li>
+                                                    <li class="item-services__feature">Fast Boost</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-services__footer item-footer">
+                                                <div class="item-footer__price">
+                                                    <span>Price</span>
+                                                    € 25
+                                                </div>
+                                                <a class="item-footer__button" href="#">Buy now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services__column">
+                                <div class="services__item item-services">
+                                    <div class="item-services__bg">
+                                        <img src="img/home-page/services/6.jpg" alt="Shadowland Powerleveling" />
+                                    </div>
+                                    <div class="item-services__body">
+                                        <div class="item-services__header item-header">
+                                            <div class="item-header__speed">
+                                                <span></span>
+                                                12 hours
+                                            </div>
+                                            <div class="item-header__server">TBC Classic</div>
+                                        </div>
+                                        <div class="item-services__content">
+                                            <div class="item-services__info">
+                                                <div class="item-services__title">Shadowland Powerleveling</div>
+                                                <ul class="item-services__features">
+                                                    <li class="item-services__feature">Any KEY level</li>
+                                                    <li class="item-services__feature">Best Gear</li>
+                                                    <li class="item-services__feature">Fast Boost</li>
+                                                </ul>
+                                            </div>
+                                            <div class="item-services__footer item-footer">
+                                                <div class="item-footer__price">
+                                                    <span>Price</span>
+                                                    € 25
+                                                </div>
+                                                <a class="item-footer__button" href="#">Buy now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page__reviews reviews">
+                    <div class="reviews__container _container">
+                        <h2 class="reviews__title _title">Only trusted reviews</h2>
+                        <div class="reviews__body">
+                            <div class="reviews__column">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__content content-reviews">
+                                        <div class="content-reviews__rate rate">
+                                            <div class="rate__row">
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content-reviews__time">2 hours ago</div>
+                                    </div>
+                                    <h4 class="item-reviews__heading">Incredible</h4>
+                                    <div class="item-reviews__text">Everything is perfect. Made by pro, the boost was fast and the steam was available...</div>
+                                    <div class="item-reviews__author">Paul Hookway</div>
+                                </div>
+                            </div>
+                            <div class="reviews__column">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__content content-reviews">
+                                        <div class="content-reviews__rate rate">
+                                            <div class="rate__row">
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content-reviews__time">2 hours ago</div>
+                                    </div>
+                                    <h4 class="item-reviews__heading">Incredible</h4>
+                                    <div class="item-reviews__text">Everything is perfect. Made by pro, the boost was fast and the steam was available...</div>
+                                    <div class="item-reviews__author">Paul Hookway</div>
+                                </div>
+                            </div>
+                            <div class="reviews__column">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__content content-reviews">
+                                        <div class="content-reviews__rate rate">
+                                            <div class="rate__row">
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content-reviews__time">2 hours ago</div>
+                                    </div>
+                                    <h4 class="item-reviews__heading">Incredible</h4>
+                                    <div class="item-reviews__text">Everything is perfect. Made by pro, the boost was fast and the steam was available...</div>
+                                    <div class="item-reviews__author">Paul Hookway</div>
+                                </div>
+                            </div>
+                            <div class="reviews__column">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__content content-reviews">
+                                        <div class="content-reviews__rate rate">
+                                            <div class="rate__row">
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content-reviews__time">2 hours ago</div>
+                                    </div>
+                                    <h4 class="item-reviews__heading">Incredible</h4>
+                                    <div class="item-reviews__text">Everything is perfect. Made by pro, the boost was fast and the steam was available...</div>
+                                    <div class="item-reviews__author">Paul Hookway</div>
+                                </div>
+                            </div>
+                            <div class="reviews__column">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__content content-reviews">
+                                        <div class="content-reviews__rate rate">
+                                            <div class="rate__row">
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content-reviews__time">2 hours ago</div>
+                                    </div>
+                                    <h4 class="item-reviews__heading">Incredible</h4>
+                                    <div class="item-reviews__text">Everything is perfect. Made by pro, the boost was fast and the steam was available...</div>
+                                    <div class="item-reviews__author">Paul Hookway</div>
+                                </div>
+                            </div>
+                            <div class="reviews__column">
+                                <div class="reviews__item item-reviews">
+                                    <div class="item-reviews__content content-reviews">
+                                        <div class="content-reviews__rate rate">
+                                            <div class="rate__row">
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                                <div class="rate__star"></div>
+                                            </div>
+                                        </div>
+                                        <div class="content-reviews__time">2 hours ago</div>
+                                    </div>
+                                    <h4 class="item-reviews__heading">Incredible</h4>
+                                    <div class="item-reviews__text">Everything is perfect. Made by pro, the boost was fast and the steam was available...</div>
+                                    <div class="item-reviews__author">Paul Hookway</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('_footer.html',{})
+        </div>
+        @@include('_popup.html',{}) @@include('_js.html',{})
+    </body>
 </html>
