@@ -162,6 +162,12 @@
 	// .menu__item
 	&__item {
 		padding: 0px 29px 0px 0px;
+
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	// .menu__link
