@@ -1,5 +1,229 @@
-footer{}
 //====================================================================================================
+.footer {
+	z-index: 20;
+	margin: -64px 0px 0px 0px;
+	@include adaptiv-value("padding-top", 50, 34, 1);
+	@include adaptiv-value("padding-bottom", 17, 36, 1);
+	background: rgba(24, 24, 24, 1);
+
+	@media (max-width:$md1+px) {
+		margin: -590px 0px 0px 0px;
+	}
+
+	@media (max-width:$md3+px) {
+		margin: -1187px 0px 0px 0px;
+	}
+
+	// .footer__container
+	&__container {}
+
+	// .footer__body
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		margin: 0px 0px 35px 0px;
+
+		@media (max-width:$md3+px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	// .footer__menu
+	&__menu {
+		@media (max-width:$md3+px) {
+			order: 2;
+			margin: 0px 0px 24px 0px;
+			max-width: 300px;
+		}
+	}
+
+	// .footer__label
+	&__label {
+		@media (max-width:$md3+px) {
+			order: 1;
+			margin: 0px 0px 24px 0px;
+		}
+	}
+
+	// .footer__logo
+	&__logo {
+		display: block;
+		text-align: center;
+		margin: 0px 0px 23px 0px;
+	}
+
+	// .footer__button
+	&__button {}
+
+	// .footer__social
+	&__social {
+		@media (max-width:$md3+px) {
+			order: 3;
+		}
+	}
+
+	// .footer__copy
+	&__copy {
+		font-size: 12px;
+		line-height: 127.2%;
+		text-align: center;
+		color: #9A9A9A;
+	}
+}
+
+.menu-footer {
+
+	// .menu-footer__list
+	&__list {
+
+		@media (max-width:$md3+px) {
+			display: grid;
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 150px;
+			align-items: center;
+			grid-auto-flow: column;
+		}
+	}
+
+	// .menu-footer__item
+	&__item {
+		@media (any-hover: hover) {
+			&:hover {
+				.menu-footer__link {
+					color: #fff;
+				}
+			}
+		}
+
+		&:not(:last-child) {
+			margin: 0px 0px 12px 0px;
+		}
+	}
+
+	// .menu-footer__link
+	&__link {
+		font-size: 14px;
+		line-height: 135.7%;
+		color: #C6C6C6;
+	}
+}
+
+.social-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+
+	// .social-footer__list
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		flex: 0 0 70px;
+		width: 70px;
+		margin: 0px 0px 16px 0px;
+
+		@media (max-width:$md3+px) {
+			flex: 1 1 100%;
+			width: 100%;
+		}
+	}
+
+	// .social-footer__item
+	&__item {
+		cursor: normal;
+
+		&:last-child {
+			margin: 0px 0px 0px 41px;
+		}
+
+		&:not(:last-child) {
+			margin: 0px 0px 16px 0px;
+		}
+
+		@media (max-width:$md3+px) {
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+
+			&:not(:last-child) {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+
+	// .social-footer__link
+	&__link {
+		display: inline-block;
+		width: 29px;
+		height: 29px;
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				&.social-footer__link_facebook {
+					background: url('../img/icons/social/facebook-h.svg') 0 0 no-repeat;
+				}
+
+				&.social-footer__link_instagram {
+					background: url('../img/icons/social/instagram-h.svg') 0 0 no-repeat;
+				}
+
+				&.social-footer__link_discourd {
+					background: url('../img/icons/social/discourd-h.svg') 0 0 no-repeat;
+				}
+
+				&.social-footer__link_skype {
+					background: url('../img/icons/social/skype-h.svg') 0 0 no-repeat;
+				}
+
+				&.social-footer__link_telegram {
+					background: url('../img/icons/social/telegram-h.svg') 0 0 no-repeat;
+				}
+			}
+		}
+
+		// .social-footer__link_facebook
+		&_facebook {
+			background: url('../img/icons/social/facebook.svg') 0 0 no-repeat;
+		}
+
+		// .social-footer__link_instagram
+		&_instagram {
+			background: url('../img/icons/social/instagram.svg') 0 0 no-repeat;
+		}
+
+		// .social-footer__link_discourd
+		&_discourd {
+			background: url('../img/icons/social/discourd.svg') 0 0 no-repeat;
+		}
+
+		// .social-footer__link_skype
+		&_skype {
+			background: url('../img/icons/social/skype.svg') 0 0 no-repeat;
+		}
+
+		// .social-footer__link_telegram
+		&_telegram {
+			background: url('../img/icons/social/telegram.svg') 0 0 no-repeat;
+		}
+
+	}
+
+	// .social-footer__mail
+	&__mail {
+		font-weight: 600;
+		color: #C6C6C6;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}
+
 
 //====================================================================================================
-

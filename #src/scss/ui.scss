@@ -7,7 +7,43 @@
 	line-height: 135.7%;
 	text-transform: uppercase;
 	color: #FFFFFF;
+}
 
+._btn-trustpilot {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: Inter;
+	font-size: 14px;
+	color: #FFFFFF;
+
+	height: 50px;
+	padding: 0px 17px;
+
+	border-radius: 10px;
+	border: 1px solid rgba(81, 179, 127, .06);
+	transition: all 0.3s ease 0s;
+	background: rgba(81, 179, 127, 0.06);
+
+	@media (any-hover: hover) {
+		&:hover {
+			background: rgba(81, 179, 127, 0.27);
+		}
+	}
+
+	&:active {
+		background: rgba(81, 179, 127, 0.27);
+		box-shadow: inset 0px 4px 14px rgba(0, 0, 0, 0.57);
+	}
+
+	span {
+		display: inline-block;
+		width: 81px;
+		height: 20px;
+		margin: 0px 0px 0px 10px;
+		background: url('../img/icons/Group.svg') 0 calc(50% - 2px) no-repeat;
+	}
 }
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
