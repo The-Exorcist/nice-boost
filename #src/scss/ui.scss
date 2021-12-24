@@ -46,6 +46,36 @@
 	}
 }
 
+._get-service-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: #FFFFFF;
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: -0.025em;
+
+	padding: 20px 0px;
+	background: #F1433A;
+	box-shadow: 0px 4px 39px rgba(231, 87, 87, 0.25);
+	border-radius: 15px;
+	transition: all 0.3s ease 0s;
+
+	&:active {
+		background: #F1433A;
+		box-shadow: 0px 4px 39px rgba(231, 87, 87, 0.25), inset 0px 4px 26px rgba(79, 8, 8, 0.61);
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background: #FC4339;
+			box-shadow: 0px 4px 39px rgba(231, 87, 87, 0.25);
+		}
+	}
+}
+
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 //<ГОТОВЫЕ КЛАССЫ>====================================================================================================
