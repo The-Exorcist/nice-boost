@@ -135,33 +135,34 @@
 .noUi-target {
 	position: relative;
 	height: 4px;
-	background-color: #eaeaea;
+	background-color: rgba(238, 71, 63, 0.27);
 	margin: 0px 11px 50px;
 
 	&::before,
 	&::after {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 0;
 
 		width: 11px;
 		height: 4px;
-		background-color: #eaeaea;
+		background-color: rgba(238, 71, 63, 0.27);
 	}
 
 	&::before {
-		left: -10px;
+		left: -11px;
 	}
 
 	&::after {
-		right: -10px;
+		right: -11px;
 	}
 }
 
-.noUi-connects {}
+.noUi-connects {
+}
 
 .noUi-connect {
-	background-color: #ffcda5;
+	background-color: #f1433a;
 }
 
 /* Handles and cursors;
@@ -175,26 +176,35 @@
 }
 
 .noUi-handle {
-	border: 1px solid #f68038;
-	background-color: #ffffff;
 	border-radius: 50%;
-	cursor: default;
+	cursor: pointer;
 
 	&::after {
-		content: "";
+		content: '';
 		position: absolute;
-		left: 3px;
-		top: 3px;
+		left: 5px;
+		top: 7px;
 
-		width: 15px;
-		height: 15px;
+		width: 10px;
+		height: 10px;
 		border-radius: 50%;
-		background-color: #f68038;
+		background-color: #f1433a;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0.5px;
+		top: 2.5px;
+
+		width: 19px;
+		height: 19px;
+		border-radius: 50%;
+		background-color: rgba(255, 86, 86, 0.44);
 	}
 }
 
 .noUi-active {
-	box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #ddd, 0 3px 6px -3px #bbb;
 }
 
 /* Disabled state;
@@ -325,14 +335,21 @@
 
 .noUi-tooltip {
 	position: absolute;
-	color: #999999;
-	font-size: 12px;
+	top: -27px;
+
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: -0.04em;
+
+	padding: 5px 10px;
+	background-color: #e5453d;
+	border-radius: 3px;
 }
 
 .noUi-horizontal .noUi-tooltip {
 	transform: translate(-50%, 0);
 	left: 50%;
-	bottom: -22px;
 }
 
 .noUi-vertical .noUi-tooltip {
@@ -342,14 +359,14 @@
 	right: 120%;
 }
 
-.noUi-horizontal .noUi-origin>.noUi-tooltip {
+.noUi-horizontal .noUi-origin > .noUi-tooltip {
 	-webkit-transform: translate(50%, 0);
 	transform: translate(50%, 0);
 	left: auto;
 	bottom: 10px;
 }
 
-.noUi-vertical .noUi-origin>.noUi-tooltip {
+.noUi-vertical .noUi-origin > .noUi-tooltip {
 	-webkit-transform: translate(0, -18px);
 	transform: translate(0, -18px);
 	top: auto;

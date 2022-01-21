@@ -18,14 +18,14 @@
 		"gulp-newer": "latest",
 		"gulp-plumber": "latest",
 		"gulp-rename": "latest",
-		"gulp-sass": "latest",
+		"gulp-sass": "^5.1.0",
 		"gulp-ttf2woff": "latest",
 		"gulp-ttf2woff2": "latest",
 		"gulp-uglify-es": "latest",
 		"gulp-webp-html": "latest",
 		"gulp-webpcss": "latest",
 		"imagemin-webp": "latest",
-		"sass": "latest",
+		"sass": "^1.49.0",
 		"transform-runtime": "0.0.0",
 		"webp-converter": "2.2.3"
 	}

@@ -5,6 +5,7 @@
         <div class="wrapper">
             @@include('_header.html',{})
             <main class="page">
+                <div class="page__image"></div>
                 <div class="page__flex-container">
                     <aside class="page__sidebar sidebar">
                         <div class="sidebar__container _container">
@@ -103,7 +104,7 @@
                         <div class="content__bg"></div>
                         <div class="content__container _container">
                             <div class="content__body">
-                                <nav class="breadcrumbs" data-da=".page__flex-container,768,0">
+                                <nav class="breadcrumbs" data-da=".page__flex-container,800,0">
                                     <ul class="breadcrumbs__list">
                                         <li>
                                             <a class="breadcrumbs__link" href="">Home</a>
@@ -129,240 +130,316 @@
                                 </div>
                                 <div class="content__services services">
                                     <div class="services__body content__services-body">
-                                        <div class="services__column">
-                                            <div class="services__item item-services">
-                                                <div class="item-services__bg">
-                                                    <img src="img/home-page/services/1.jpg" alt="Shadowland Powerleveling" />
-                                                </div>
-                                                <div class="item-services__body">
-                                                    <div class="item-services__header item-header">
-                                                        <div class="item-header__speed">
-                                                            <span></span>
-                                                            12 hours
-                                                        </div>
-                                                        <div class="item-header__server">TBC Classic</div>
-                                                        <div class="item-header__label item-header__label-availability">
-                                                            <span></span>
-                                                            Out of stock
-                                                        </div>
+                                        <article class="item-services">
+                                            <a class="item-services__bg" href="">
+                                                <img src="img/home-page/services/1.jpg" alt="Shadowland Powerleveling" />
+                                            </a>
+                                            <div class="item-services__body">
+                                                <div class="item-services__header header-labels">
+                                                    <div class="header-labels__item header-labels__eta">
+                                                        <span>12 hours</span>
                                                     </div>
-                                                    <div class="item-services__content">
-                                                        <div class="item-services__info">
-                                                            <div class="item-services__title">Shadowland Powerleveling</div>
-                                                            <ul class="item-services__features">
-                                                                <li class="item-services__feature">Any KEY level</li>
-                                                                <li class="item-services__feature">Best Gear</li>
-                                                                <li class="item-services__feature">Fast Boost</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="item-services__footer item-footer">
-                                                            <div class="item-footer__price">
-                                                                <span>Price</span>
-                                                                € 25
-                                                            </div>
-                                                            <a class="item-footer__button" href="#">Buy now</a>
-                                                        </div>
+                                                    <div class="header-labels__item header-labels__server">
+                                                        <span>TBC Classic</span>
+                                                    </div>
+                                                    <div class="header-labels__item header-labels__shadowlands">
+                                                        <span>Shadowlands</span>
+                                                    </div>
+                                                    <div class="header-labels__item header-labels__stock">
+                                                        <span>Out of stock</span>
+                                                    </div>
+                                                    <div class="header-labels__item header-labels__hot">
+                                                        <span>hot</span>
+                                                    </div>
+                                                    <div class="header-labels__item header-labels__sale">
+                                                        <span>sale</span>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="services__column">
-                                            <div class="services__item item-services">
-                                                <div class="item-services__bg">
-                                                    <img src="img/home-page/services/2.jpg" alt="Shadowland Powerleveling" />
-                                                </div>
-                                                <div class="item-services__body">
-                                                    <div class="item-services__header item-header">
-                                                        <div class="item-header__speed">
-                                                            <span></span>
-                                                            12 hours
+                                                <div class="item-services__content">
+                                                    <h4 class="item-services__title">
+                                                        <a class="item-services__title-link" href="">Shadowland Powerleveling</a>
+                                                    </h4>
+                                                    <ul class="item-services__features">
+                                                        <li class="item-services__feature">Any KEY level</li>
+                                                        <li class="item-services__feature">Best Gear</li>
+                                                        <li class="item-services__feature">Fast Boost</li>
+                                                    </ul>
+                                                    <div class="item-services__footer item-footer">
+                                                        <div class="item-footer__price">
+                                                            <div class="item-footer__price-text">Price</div>
+                                                            <div class="item-footer__price-value eur">25</div>
                                                         </div>
-                                                        <div class="item-header__server">TBC Classic</div>
-                                                        <div class="item-header__label item-header__label-sale">
-                                                            <span></span>
-                                                            SALE
-                                                        </div>
-                                                    </div>
-                                                    <div class="item-services__content">
-                                                        <div class="item-services__info">
-                                                            <div class="item-services__title">Shadowland Powerleveling</div>
-                                                            <ul class="item-services__features">
-                                                                <li class="item-services__feature">Any KEY level</li>
-                                                                <li class="item-services__feature">Best Gear</li>
-                                                                <li class="item-services__feature">Fast Boost</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="item-services__footer item-footer">
-                                                            <div class="item-footer__price">
-                                                                <span>Price</span>
-                                                                € 25
-                                                            </div>
-                                                            <a class="item-footer__button" href="#">Buy now</a>
-                                                        </div>
+                                                        <a class="item-footer__button" href="#">Buy now</a>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="services__column">
-                                            <div class="services__item item-services">
-                                                <div class="item-services__bg">
-                                                    <img src="img/home-page/services/3.jpg" alt="Shadowland Powerleveling" />
-                                                </div>
-                                                <div class="item-services__body">
-                                                    <div class="item-services__header item-header">
-                                                        <div class="item-header__speed">
-                                                            <span></span>
-                                                            12 hours
-                                                        </div>
-                                                        <div class="item-header__server">TBC Classic</div>
-                                                        <div class="item-header__label item-header__label-hot">
-                                                            <span></span>
-                                                            hot
-                                                        </div>
+                                        </article>
+                                        <article class="item-services">
+                                            <div class="item-services__bg">
+                                                <img src="img/home-page/services/2.jpg" alt="Shadowland Powerleveling" />
+                                            </div>
+                                            <div class="item-services__body">
+                                                <div class="item-services__header header-labels">
+                                                    <div class="header-labels__item header-labels__eta">
+                                                        <span>12 hours</span>
                                                     </div>
-                                                    <div class="item-services__content">
-                                                        <div class="item-services__info">
-                                                            <div class="item-services__title">Shadowland Powerleveling</div>
-                                                            <ul class="item-services__features">
-                                                                <li class="item-services__feature">Any KEY level</li>
-                                                                <li class="item-services__feature">Best Gear</li>
-                                                                <li class="item-services__feature">Fast Boost</li>
-                                                            </ul>
+                                                    <div class="header-labels__item header-labels__shadowlands">
+                                                        <span>Shadowlands</span>
+                                                    </div>
+                                                    <div class="header-labels__item header-labels__sale">
+                                                        <span>sale</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item-services__content">
+                                                    <h4 class="item-services__title">
+                                                        <a class="item-services__title-link" href="">Shadowland Powerleveling</a>
+                                                    </h4>
+                                                    <ul class="item-services__features">
+                                                        <li class="item-services__feature">Any KEY level</li>
+                                                        <li class="item-services__feature">Best Gear</li>
+                                                        <li class="item-services__feature">Fast Boost</li>
+                                                    </ul>
+                                                    <div class="item-services__footer item-footer">
+                                                        <div class="item-footer__price">
+                                                            <div class="item-footer__price-text">Price</div>
+                                                            <div class="item-footer__price-value eur">25</div>
                                                         </div>
-                                                        <div class="item-services__footer item-footer">
-                                                            <div class="item-footer__price">
-                                                                <span>Price</span>
-                                                                € 25
-                                                            </div>
-                                                            <a class="item-footer__button" href="#">Buy now</a>
-                                                        </div>
+                                                        <a class="item-footer__button" href="#">Buy now</a>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="services__column">
-                                            <div class="services__item item-services">
-                                                <div class="item-services__bg">
-                                                    <img src="img/home-page/services/4.jpg" alt="Shadowland Powerleveling" />
-                                                </div>
-                                                <div class="item-services__body">
-                                                    <div class="item-services__header item-header">
-                                                        <div class="item-header__speed">
-                                                            <span></span>
-                                                            12 hours
-                                                        </div>
-                                                        <div class="item-header__server">TBC Classic</div>
-                                                        <div class="item-header__label item-header__label-sale">
-                                                            <span></span>
-                                                            SALE
-                                                        </div>
-                                                        <div class="item-header__label item-header__label-hot">
-                                                            <span></span>
-                                                            hot
-                                                        </div>
+                                        </article>
+                                        <article class="item-services">
+                                            <div class="item-services__bg">
+                                                <img src="img/home-page/services/3.jpg" alt="Shadowland Powerleveling" />
+                                            </div>
+                                            <div class="item-services__body">
+                                                <div class="item-services__header header-labels">
+                                                    <div class="header-labels__item header-labels__eta">
+                                                        <span>12 hours</span>
                                                     </div>
-                                                    <div class="item-services__content">
-                                                        <div class="item-services__info">
-                                                            <div class="item-services__title">Shadowland Powerleveling</div>
-                                                            <ul class="item-services__features">
-                                                                <li class="item-services__feature">Any KEY level</li>
-                                                                <li class="item-services__feature">Best Gear</li>
-                                                                <li class="item-services__feature">Fast Boost</li>
-                                                            </ul>
+                                                    <div class="header-labels__item header-labels__shadowlands">
+                                                        <span>Shadowlands</span>
+                                                    </div>
+                                                    <div class="header-labels__item header-labels__hot">
+                                                        <span>hot</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item-services__content">
+                                                    <h4 class="item-services__title">
+                                                        <a class="item-services__title-link" href="">Shadowland Powerleveling</a>
+                                                    </h4>
+                                                    <ul class="item-services__features">
+                                                        <li class="item-services__feature">Any KEY level</li>
+                                                        <li class="item-services__feature">Best Gear</li>
+                                                        <li class="item-services__feature">Fast Boost</li>
+                                                    </ul>
+                                                    <div class="item-services__footer item-footer">
+                                                        <div class="item-footer__price">
+                                                            <div class="item-footer__price-text">Price</div>
+                                                            <div class="item-footer__price-value eur">25</div>
                                                         </div>
-                                                        <div class="item-services__footer item-footer">
-                                                            <div class="item-footer__price">
-                                                                <span>Price</span>
-                                                                € 25
-                                                            </div>
-                                                            <a class="item-footer__button" href="#">Buy now</a>
-                                                        </div>
+                                                        <a class="item-footer__button" href="#">Buy now</a>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="services__column">
-                                            <div class="services__item item-services">
-                                                <div class="item-services__bg">
-                                                    <img src="img/home-page/services/5.jpg" alt="Shadowland Powerleveling" />
-                                                </div>
-                                                <div class="item-services__body">
-                                                    <div class="item-services__header item-header">
-                                                        <div class="item-header__speed">
-                                                            <span></span>
-                                                            12 hours
-                                                        </div>
-                                                        <div class="item-header__server">TBC Classic</div>
-                                                        <div class="item-header__label item-header__label-availability">
-                                                            <span></span>
-                                                            Out of stock
-                                                        </div>
-                                                        <div class="item-header__label item-header__label-sale">
-                                                            <span></span>
-                                                            SALE
-                                                        </div>
-                                                        <div class="item-header__label item-header__label-hot">
-                                                            <span></span>
-                                                            hot
-                                                        </div>
+                                        </article>
+                                        <article class="item-services">
+                                            <div class="item-services__bg">
+                                                <img src="img/home-page/services/4.jpg" alt="Shadowland Powerleveling" />
+                                            </div>
+                                            <div class="item-services__body">
+                                                <div class="item-services__header header-labels">
+                                                    <div class="header-labels__item header-labels__eta">
+                                                        <span>Today</span>
                                                     </div>
-                                                    <div class="item-services__content">
-                                                        <div class="item-services__info">
-                                                            <div class="item-services__title">Shadowland Powerleveling</div>
-                                                            <ul class="item-services__features">
-                                                                <li class="item-services__feature">Any KEY level</li>
-                                                                <li class="item-services__feature">Best Gear</li>
-                                                                <li class="item-services__feature">Fast Boost</li>
-                                                            </ul>
+                                                    <div class="header-labels__item header-labels__shadowlands">
+                                                        <span>Shadowlands</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item-services__content">
+                                                    <h4 class="item-services__title">
+                                                        <a class="item-services__title-link" href="">CASTLE NATHRIA HEROIC BOOST</a>
+                                                    </h4>
+                                                    <ul class="item-services__features">
+                                                        <li class="item-services__feature">Any KEY level</li>
+                                                        <li class="item-services__feature">Best Gear</li>
+                                                        <li class="item-services__feature">Fast Boost</li>
+                                                    </ul>
+                                                    <div class="item-services__footer item-footer">
+                                                        <div class="item-footer__price">
+                                                            <div class="item-footer__price-text">Price</div>
+                                                            <div class="item-footer__price-value eur">8</div>
                                                         </div>
-                                                        <div class="item-services__footer item-footer">
-                                                            <div class="item-footer__price">
-                                                                <span>Price</span>
-                                                                € 25
-                                                            </div>
-                                                            <a class="item-footer__button" href="#">Buy now</a>
-                                                        </div>
+                                                        <a class="item-footer__button" href="#">Buy now</a>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="services__column">
-                                            <div class="services__item item-services">
-                                                <div class="item-services__bg">
-                                                    <img src="img/home-page/services/6.jpg" alt="Shadowland Powerleveling" />
-                                                </div>
-                                                <div class="item-services__body">
-                                                    <div class="item-services__header item-header">
-                                                        <div class="item-header__speed">
-                                                            <span></span>
-                                                            12 hours
-                                                        </div>
-                                                        <div class="item-header__server">TBC Classic</div>
+                                        </article>
+                                        <article class="item-services">
+                                            <div class="item-services__bg">
+                                                <img src="img/home-page/services/5.jpg" alt="Shadowland Powerleveling" />
+                                            </div>
+                                            <div class="item-services__body">
+                                                <div class="item-services__header header-labels">
+                                                    <div class="header-labels__item header-labels__eta">
+                                                        <span>12 hours</span>
                                                     </div>
-                                                    <div class="item-services__content">
-                                                        <div class="item-services__info">
-                                                            <div class="item-services__title">Shadowland Powerleveling</div>
-                                                            <ul class="item-services__features">
-                                                                <li class="item-services__feature">Any KEY level</li>
-                                                                <li class="item-services__feature">Best Gear</li>
-                                                                <li class="item-services__feature">Fast Boost</li>
-                                                            </ul>
+                                                    <div class="header-labels__item header-labels__shadowlands">
+                                                        <span>Shadowlands</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item-services__content">
+                                                    <h4 class="item-services__title">
+                                                        <a class="item-services__title-link" href="">SINTOUCHED DEATHWALKER</a>
+                                                    </h4>
+                                                    <ul class="item-services__features">
+                                                        <li class="item-services__feature">Any KEY level</li>
+                                                        <li class="item-services__feature">Best Gear</li>
+                                                        <li class="item-services__feature">Fast Boost</li>
+                                                    </ul>
+                                                    <div class="item-services__footer item-footer">
+                                                        <div class="item-footer__price">
+                                                            <div class="item-footer__price-text">Price</div>
+                                                            <div class="item-footer__price-value eur">25</div>
                                                         </div>
-                                                        <div class="item-services__footer item-footer">
-                                                            <div class="item-footer__price">
-                                                                <span>Price</span>
-                                                                € 25
-                                                            </div>
-                                                            <a class="item-footer__button" href="#">Buy now</a>
-                                                        </div>
+                                                        <a class="item-footer__button" href="#">Buy now</a>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </article>
+                                        <article class="item-services">
+                                            <div class="item-services__bg">
+                                                <img src="img/home-page/services/6.jpg" alt="Shadowland Powerleveling" />
+                                            </div>
+                                            <div class="item-services__body">
+                                                <div class="item-services__header header-labels">
+                                                    <div class="header-labels__item header-labels__eta">
+                                                        <span>12 hours</span>
+                                                    </div>
+                                                    <div class="header-labels__item header-labels__shadowlands">
+                                                        <span>Shadowlands</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item-services__content">
+                                                    <h4 class="item-services__title">
+                                                        <a class="item-services__title-link" href="">COVENANT CAMPAIGN</a>
+                                                    </h4>
+                                                    <ul class="item-services__features">
+                                                        <li class="item-services__feature">Any KEY level</li>
+                                                        <li class="item-services__feature">Best Gear</li>
+                                                        <li class="item-services__feature">Fast Boost</li>
+                                                    </ul>
+                                                    <div class="item-services__footer item-footer">
+                                                        <div class="item-footer__price">
+                                                            <div class="item-footer__price-text">Price</div>
+                                                            <div class="item-footer__price-value eur">25</div>
+                                                        </div>
+                                                        <a class="item-footer__button" href="#">Buy now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <article class="item-services">
+                                            <div class="item-services__bg">
+                                                <img src="img/home-page/services/4.jpg" alt="Shadowland Powerleveling" />
+                                            </div>
+                                            <div class="item-services__body">
+                                                <div class="item-services__header header-labels">
+                                                    <div class="header-labels__item header-labels__eta">
+                                                        <span>Today</span>
+                                                    </div>
+                                                    <div class="header-labels__item header-labels__shadowlands">
+                                                        <span>Shadowlands</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item-services__content">
+                                                    <h4 class="item-services__title">
+                                                        <a class="item-services__title-link" href="">CASTLE NATHRIA HEROIC BOOST</a>
+                                                    </h4>
+                                                    <ul class="item-services__features">
+                                                        <li class="item-services__feature">Any KEY level</li>
+                                                        <li class="item-services__feature">Best Gear</li>
+                                                        <li class="item-services__feature">Fast Boost</li>
+                                                    </ul>
+                                                    <div class="item-services__footer item-footer">
+                                                        <div class="item-footer__price">
+                                                            <div class="item-footer__price-text">Price</div>
+                                                            <div class="item-footer__price-value eur">8</div>
+                                                        </div>
+                                                        <a class="item-footer__button" href="#">Buy now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <article class="item-services">
+                                            <div class="item-services__bg">
+                                                <img src="img/home-page/services/5.jpg" alt="Shadowland Powerleveling" />
+                                            </div>
+                                            <div class="item-services__body">
+                                                <div class="item-services__header header-labels">
+                                                    <div class="header-labels__item header-labels__eta">
+                                                        <span>12 hours</span>
+                                                    </div>
+                                                    <div class="header-labels__item header-labels__shadowlands">
+                                                        <span>Shadowlands</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item-services__content">
+                                                    <h4 class="item-services__title">
+                                                        <a class="item-services__title-link" href="">SINTOUCHED DEATHWALKER</a>
+                                                    </h4>
+                                                    <ul class="item-services__features">
+                                                        <li class="item-services__feature">Any KEY level</li>
+                                                        <li class="item-services__feature">Best Gear</li>
+                                                        <li class="item-services__feature">Fast Boost</li>
+                                                    </ul>
+                                                    <div class="item-services__footer item-footer">
+                                                        <div class="item-footer__price">
+                                                            <div class="item-footer__price-text">Price</div>
+                                                            <div class="item-footer__price-value eur">25</div>
+                                                        </div>
+                                                        <a class="item-footer__button" href="#">Buy now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <article class="item-services">
+                                            <div class="item-services__bg">
+                                                <img src="img/home-page/services/6.jpg" alt="Shadowland Powerleveling" />
+                                            </div>
+                                            <div class="item-services__body">
+                                                <div class="item-services__header header-labels">
+                                                    <div class="header-labels__item header-labels__eta">
+                                                        <span>12 hours</span>
+                                                    </div>
+                                                    <div class="header-labels__item header-labels__shadowlands">
+                                                        <span>Shadowlands</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item-services__content">
+                                                    <h4 class="item-services__title">
+                                                        <a class="item-services__title-link" href="">COVENANT CAMPAIGN</a>
+                                                    </h4>
+                                                    <ul class="item-services__features">
+                                                        <li class="item-services__feature">Any KEY level</li>
+                                                        <li class="item-services__feature">Best Gear</li>
+                                                        <li class="item-services__feature">Fast Boost</li>
+                                                    </ul>
+                                                    <div class="item-services__footer item-footer">
+                                                        <div class="item-footer__price">
+                                                            <div class="item-footer__price-text">Price</div>
+                                                            <div class="item-footer__price-value eur">25</div>
+                                                        </div>
+                                                        <a class="item-footer__button" href="#">Buy now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
                                     </div>
                                 </div>
                             </div>
-                            <h2 class="content__title _title">WoW Shadowlands Boosting Service</h2>
+                            <h2 class="content__title _title"><span>WoW Shadowlands Boosting Service</span></h2>
                             <p class="content__text">
                                 Leveling up in Shadowlands is very intense and exciting. Interesting quest lines, beautiful locations - it's all worth going through at least once. <br />
                                 Four dissimilar covenants, a dark and mysterious Maw - the developers have done a great job.
