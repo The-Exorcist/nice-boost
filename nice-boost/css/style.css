@@ -2965,18 +2965,18 @@ body._lock .page::before {
 }
 
 .page__category-box {
-  margin-top: 71px;
-  padding: 0px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100%;
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 100%;
+  margin-top: 71px;
+  padding: 0px 15px;
 }
 
 .page__card-box {

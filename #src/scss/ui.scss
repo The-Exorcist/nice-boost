@@ -207,90 +207,6 @@
 	}
 }
 
-.item-header {
-	// display: flex;
-	// row-gap: 5px;
-	// justify-content: space-between;
-	// flex-wrap: wrap;
-
-	// color: #FFFFFF;
-	// font-family: Quarion;
-	// font-weight: 600;
-	// font-size: 14px;
-	// white-space: nowrap;
-
-	// &>div {
-	// 	max-height: 32px;
-	// }
-
-	// // .item-header__speed
-	// &__speed {
-	// 	display: flex;
-	// 	justify-content: center;
-	// 	align-items: center;
-
-	// 	padding: 0px 0px 0px 30px;
-	// 	background: url('../img/icons/Clock.svg') 0 center no-repeat;
-
-	// 	span {
-	// 		display: inline-block;
-	// 	}
-	// }
-
-	// // .item-header__server
-	// &__server {
-	// 	background: linear-gradient(90deg, rgba(96, 201, 70, 0.54) -14.78%, #2FFF91 451.57%);
-	// 	border-radius: 10px;
-	// 	padding: 8px 30px;
-	// }
-
-	// // .item-header__label
-	// &__label {
-	// 	display: flex;
-	// 	justify-content: center;
-	// 	align-items: center;
-
-	// 	font-family: Quarion;
-	// 	font-weight: 700;
-	// 	font-size: 16px;
-	// 	color: #FFFFFF;
-
-	// 	border-radius: 8px;
-	// 	background-color: #5B5B5B;
-	// 	padding: 8px 12px;
-	// }
-
-	// //.item-header__label-availability
-	// &__label-availability {
-	// 	span {
-	// 		padding: 0px 0px 0px 25px;
-	// 		background: url('../img/icons/out-of-stock.svg') 0 center no-repeat;
-	// 	}
-	// }
-
-	// //.item-header__label-sale
-	// &__label-sale {
-	// 	text-transform: uppercase;
-	// 	background: #45D7B3;
-
-	// 	span {
-	// 		padding: 0px 0px 0px 24px;
-	// 		background: url('../img/icons/sale.svg') 0 center no-repeat;
-	// 	}
-	// }
-
-	// // .item-header__label-hot
-	// &__label-hot {
-	// 	text-transform: uppercase;
-	// 	background-color: #F1433A;
-
-	// 	span {
-	// 		padding: 0px 0px 0px 25px;
-	// 		background: url('../img/icons/hot.svg') 0 center no-repeat;
-	// 	}
-	// }
-}
-
 .item-footer {
 	display: flex;
 	justify-content: space-between;
@@ -342,10 +258,6 @@
 //========================================================================================================================================================
 .sidebar {
 	background: #1b1919;
-
-	// @media (min-width: 801 + px) {
-	// 	margin-right: 40px;
-	// }
 
 	// .sidebar__container
 	&__container {
@@ -514,12 +426,6 @@
 				background: url('../img/icons/categories/Medal-hover.svg') 0 center no-repeat;
 			}
 		}
-
-		// @media (max-width: 850+px) {
-		// 	font-size: 16px;
-
-		// 	background-position: 5px center;
-		// }
 
 		@media (max-width: $md4+px) {
 			padding: 0px 15px;
