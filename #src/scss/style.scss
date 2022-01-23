@@ -17,7 +17,7 @@
 
 //<Шрифт по умолчанию>==========================================================================================
 $fontFamily: 'Inter';
-$fontSize: 16px;
+$fontSize: 16;
 //</Шрифт по умолчанию>==========================================================================================
 
 //</ШРИФТЫ>=======================================================================================================
@@ -163,49 +163,105 @@ body {
 	&__reviews {
 	}
 
-	// .page__order
-	&__order {
+	//.page__order-step
+	&__order-step {
 	}
 
 	//.page__container
 	&__container {
 	}
 
-	// .page__flex-container
-	&__flex-container {
-		max-width: 1440px;
-		margin: 71px auto 0;
-
-		@media (min-width: 800+px) {
-			display: flex;
-		}
-
-		@media (max-width: 800+px) {
+	// .page__category-box
+	&__category-box {
+		margin-top: 71px;
+		padding: 0px 15px;
+		// @media (min-width: 1400+px) {
+		// 	grid-template-columns: 276px 711px 350px;
+		// }
+		// @media (min-width: 851px) {
+		// 	display: grid;
+		// 	column-gap: 30px;
+		// 	justify-content: center;
+		// 	grid-template-columns: 276px minmax(350px, 711px);
+		// }
+		// @media (max-width: 850px) {
+		// 	display: block;
+		// 	// display: flex;
+		// 	// flex-direction: column;
+		// 	// align-items: center;
+		// }
+		display: flex;
+		// flex-wrap: wrap;
+		max-width: 100%;
+		column-gap: 30px;
+		justify-content: center;
+		@media (max-width: 800px) {
 			flex-direction: column;
+			align-items: center;
+			margin-top: 10px;
+		}
+	}
+	// .page__card-box
+	&__card-box {
+		display: grid;
+		column-gap: 30px;
+		justify-content: center;
+
+		padding: 71px 15px 0px 15px;
+
+		@media (min-width: 1430px) {
+			grid-template-columns: 276px minmax(280px, 712px) minmax(280px, 350px);
+		}
+		@media (max-width: 1430px) {
+			grid-template-columns: 276px minmax(280px, 712px);
+		}
+		@media (max-width: 800px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			padding-top: 0;
 		}
 	}
 
 	// .page__sidebar
 	&__sidebar {
-		flex: 0 0 276px;
-
-		@media (max-width: 800+px) {
-			@include adaptiv-value('margin-bottom', 40, 20, 1);
+		@media (min-width: 801px) {
+			flex: 0 0 276px;
 		}
-
-		@media (max-width: $md4+px) {
-			flex: 1 1 100%;
-			width: 100%;
+		@media (max-width: 800px) {
+			align-self: stretch;
+			@include adaptiv-value('margin-bottom', 40, 20, 1);
 		}
 	}
 	// .page__purchase
 	&__purchase {
-		flex: 0 0 783px;
+		@media (min-width: 800px) {
+			flex: 1 1 auto;
+		}
+		@media (max-width: 800px) {
+			align-self: stretch;
+		}
 	}
 
 	// .page__order
 	&__order {
-		flex: 0 0 350px;
+		max-width: 350px;
+
+		@media (min-width: 1430px) {
+			grid-row-start: 1;
+			grid-column-start: 3;
+		}
+		@media (max-width: 1430px) {
+			justify-self: center;
+			width: 100%;
+			grid-row-start: 2;
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+		@media (max-width: 400px) {
+			align-self: stretch;
+		}
 	}
 
 	// .page__content

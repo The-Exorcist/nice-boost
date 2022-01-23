@@ -70,7 +70,7 @@ if (document.querySelector('.purchase')) {
 
 		observer: true,
 		observeParents: true,
-		slidesPerView: 1,
+		slidesPerView: 2,
 		spaceBetween: 20,
 		// autoHeight: true,
 		speed: 800,
@@ -91,17 +91,17 @@ if (document.querySelector('.purchase')) {
 		// },
 
 		breakpoints: {
-			740: {
+			320: {
 				slidesPerView: 1,
+				spaceBetween: 10
 			},
-			800: {
-				slidesPerView: 1,
-				spaceBetween: 20,
-			},
-			1080: {
+			// when window width is >= 480px
+			1050: {
 				slidesPerView: 2,
-				spaceBetween: 20,
+				spaceBetween: 20
 			},
+			// when window width is >= 640px
+
 		},
 
 		on: {

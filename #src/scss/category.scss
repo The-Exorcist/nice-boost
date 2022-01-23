@@ -1,240 +1,22 @@
-.sidebar {
-	background: #1B1919;
-
-	@media (min-width:801 + px) {
-		margin-right: 40px;
-	}
-
-	// .sidebar__container
-	&__container {
-		@media (max-width:$md3+px) {
-			padding: 0px 0px 0px 0px;
-			background: #000;
-		}
-	}
-
-	// .sidebar__header
-	&__header {
-		font-family: "Quarion";
-		font-size: 14px;
-		line-height: 126.2%;
-		color: rgba(255, 255, 255, 0.39);
-
-		height: 115px;
-		background: url('../img/category/sidebar-bg.jpg') 0 0 no-repeat;
-
-		@media (max-width:800+px) {
-			height: 95px;
-			background: url('../img/category/sidebar-bg-mobile.jpg') 0 0 / cover no-repeat;
-		}
-
-		span {
-			display: block;
-			font-weight: 600;
-			font-size: 18px;
-			color: #FFFFFF;
-		}
-	}
-
-	// .sidebar__title
-	&__title {
-		position: relative;
-		z-index: 10;
-		padding: 18px 0px 0px 40px;
-	}
-
-	// .sidebar__button
-	&__button {
-		position: absolute;
-		top: 20px;
-		right: 10px;
-		z-index: 10;
-
-		width: 35px;
-		height: 35px;
-		border-radius: 5px;
-		background: linear-gradient(90deg, rgba(229, 69, 61, 0.6) -14.78%, rgba(255, 122, 46, 0.6) 451.57%);
-		cursor: pointer;
-
-		&::before {
-			content: '';
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: 10px;
-			height: 6px;
-			transform: translate(-50%, -50%);
-			background: url('../img/icons/arrow-down.svg') 0 0 no-repeat;
-		}
-	}
-
-	// .sidebar__categories
-	&__categories {
-
-		@media (min-width:800+px) {
-			width: 276px;
-			padding: 25px 0px 20px;
-		}
-
-		@media (max-width:800+px) {
-			display: grid;
-			grid-gap: 10px;
-			grid-template-columns: repeat(3, minmax(220px, 1fr));
-
-			width: 100%;
-			background: #000;
-			@include adaptiv-value("padding", 10, 5, 1);
-		}
-
-		@media (max-width:700+px) {
-			grid-template-columns: repeat(2, 1fr);
-		}
-
-	}
-
-	// .sidebar__category
-	&__category {
-		margin: 0px 0px 0px 40px;
-
-		@media (max-width:800+px) {
-			height: 50px;
-			margin: 0 0px;
-			background: #1B1919;
-			border-radius: 8px;
-		}
-	}
-
-	// .sidebar__category-title
-	&__category-title {
-		font-family: Quarion;
-		font-size: 18px;
-		color: #797979;
-		line-height: 137.5%;
-
-		position: relative;
-		display: block;
-		padding: 0px 0px 0px 38px;
-		margin: 0px 0px 20px 0px;
-		transition: all 0.3s ease 0s;
-		background: url('../img/icons/categories/Medal.svg') 0 center no-repeat;
-		cursor: pointer;
-
-		&::after {
-			content: '';
-			position: absolute;
-			top: 50%;
-			right: 20px;
-
-			width: 16px;
-			height: 16px;
-			background: url('../img/icons/Plus.svg') 0 0 no-repeat;
-			transition: transform 0.3s ease 0s;
-			transform: translate(0px, -50%);
-
-			@media (max-width:$md4+px) {
-				right: 10px;
-			}
-
-			@media (max-width: 320px) {
-				right: 5px;
-			}
-		}
-
-		&._active {
-			color: rgba(229, 69, 61, 1);
-			background: url('../img/icons/categories/Medal-hover.svg') 0 center no-repeat;
-
-			&::after {
-				transform: translate(0px, -50%) rotate(45deg);
-			}
-		}
-
-		@media (any-hover: hover) {
-			&:hover {
-				color: rgba(229, 69, 61, 1);
-				background: url('../img/icons/categories/Medal-hover.svg') 0 center no-repeat;
-			}
-		}
-
-		@media (max-width:800+px) {
-			font-size: 16px;
-			line-height: 50px;
-			background-position: 5px center;
-		}
-
-		@media (max-width:$md4+px) {
-			padding: 0px 10px;
-			background: none;
-
-			&._active {
-				background: none;
-			}
-
-			@media (any-hover: hover) {
-				&:hover {
-					background: none;
-				}
-			}
-		}
-	}
-
-	// .sidebar__categories-list
-	&__categories-list {
-		position: relative;
-		z-index: 10;
-
-		width: 100%;
-		padding: 10px 20px 10px 40px;
-		background: #1B1919;
-		border-radius: 20px;
-
-		@media (max-width:$md4+px) {
-			padding: 10px 10px 10px 15px;
-		}
-	}
-
-	// .sidebar__category-item
-	&__category-item {
-		font-family: Quarion;
-		font-size: 18px;
-		line-height: 135.7%;
-		color: #989898;
-
-		display: block;
-		cursor: pointer;
-
-		&:not(:last-child) {
-			margin: 0px 0px 10px 0px;
-		}
-
-
-		@media (any-hover: hover) {
-			&:hover {
-				color: #fff;
-			}
-		}
-	}
-}
-
 .content {
-
 	// .content__body
 	&__body {
 		padding: 20px 0px 0px 0px;
-		@include adaptiv-value("margin-bottom", 50, 30, 1);
+		@include adaptiv-value('margin-bottom', 50, 30, 1);
 	}
 
 	//.content__categories
 	&__categories {
 		margin: 0px 0px 25px 0px;
 
-		@media (max-width:1400+px) {
+		@media (max-width: 1400+px) {
 			display: none;
 		}
 	}
 
 	// .content__services
-	&__services {}
+	&__services {
+	}
 
 	// .content__services-body
 	&__services-body {
@@ -243,74 +25,26 @@
 			row-gap: 20px;
 		}
 
-		@media (max-width:$md1+px) {
+		@media (max-width: $md1+px) {
 			grid-template-columns: 1fr;
 		}
 	}
 }
 
-.breadcrumbs {
-
-	@media (min-width:800+px) {
-		padding-bottom: 20px;
-	}
-
-	@media (max-width: 800+px) {
-		padding-left: 20px;
-		padding-top: 20px;
-		padding-right: 20px;
-		@include adaptiv-value("padding-bottom", 40, 20, 1);
-		overflow: auto;
-	}
-
-	// .breadcrumbs__list
-	&__list {
-		display: flex;
-
-		li {
-			padding: 0 7px 0 18px;
-			background: url('../img/icons/CaretRight.svg') left 3px no-repeat;
-
-			&:first-child {
-				padding: 0px 7px 0px 0px;
-				background: none;
-			}
-
-			@media (max-width:$md4+px) {
-				white-space: nowrap;
-			}
-		}
-	}
-
-	// .breadcrumbs__link
-	&__link {
-		font-family: Inter;
-		font-size: 14px;
-		line-height: 135.7%;
-		letter-spacing: -0.04em;
-		color: #FFFFFF;
-
-		@media (any-hover: hover) {
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-	}
-}
-
 .services {
-
 	// .services__column
-	&__column {}
+	&__column {
+	}
 
 	// .services__item
-	&__item {}
+	&__item {
+	}
 }
 
 .content {
-
 	// .content__bg
-	&__bg {}
+	&__bg {
+	}
 
 	// .content__title
 	&__title {
@@ -321,7 +55,7 @@
 			margin-bottom: 20px;
 		}
 
-		@media (max-width:$md3 + px) {
+		@media (max-width: $md3 + px) {
 			background-size: 22px 22px;
 			background-position: 0 3px;
 		}
@@ -331,7 +65,7 @@
 	&__text {
 		font-weight: 500;
 		line-height: 150.7%;
-		color: #C7C7C7;
+		color: #c7c7c7;
 
 		max-width: 720px;
 
@@ -346,16 +80,16 @@
 	}
 
 	// .content__leveling
-	&__leveling {}
+	&__leveling {
+	}
 }
 
 .leveling {
-
 	// .leveling__title
 	&__title {
 		font-weight: 700;
 		line-height: 150.7%;
-		color: #FFFFFF;
+		color: #ffffff;
 
 		margin: 0px 0px 20px 0px;
 	}
