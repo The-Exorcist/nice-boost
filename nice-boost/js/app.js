@@ -1112,7 +1112,6 @@ const orderPage = document.querySelector('.order-page');
 
 if (orderPage) {
 	const regionsItems = document.querySelectorAll('.order-page__regions-item');
-	// const carryItems = document.querySelectorAll('.carry-select__item');
 	const races = document.querySelectorAll('.time-select__race-item');
 	const boostTypes = document.querySelectorAll('.boost-type__item');
 	const speedItems = document.querySelectorAll('.speed__item');
@@ -1131,11 +1130,6 @@ if (orderPage) {
 		});
 	});
 
-	// carryItems.forEach(carryItem => {
-	// 	carryItem.addEventListener("click", function (e) {
-	// 		this.classList.toggle("_active")
-	// 	});
-	// });
 	races.forEach(race => {
 		race.addEventListener("click", function (e) {
 
@@ -1171,6 +1165,26 @@ if (orderPage) {
 			this.classList.toggle("_active")
 		});
 	});
+}
+
+const categoriesBlock = document.querySelector('.categories-home-page');
+
+if (categoriesBlock) {
+	const categoriesItems = document.querySelectorAll('.categories-home-page__item');
+	categoriesItems.forEach(categoriesItem => {
+		categoriesItem.addEventListener("click", function (e) {
+			e.preventDefault()
+
+			let item = e.target.closest('.categories-home-page__item')
+			if (!(e.target.classList.contains("_active"))) {
+				for (let i = 0; i < categoriesItems.length; i++) {
+					const element = categoriesItems[i];
+					element.classList.remove("_active")
+				}
+				item.classList.add("_active")
+			}
+		});
+	})
 }
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
