@@ -1109,7 +1109,6 @@ if (rangeItems.length) {
 }
 
 const orderPage = document.querySelector('.order-page');
-
 if (orderPage) {
 	const regionsItems = document.querySelectorAll('.order-page__regions-item');
 	const races = document.querySelectorAll('.time-select__race-item');
@@ -1168,7 +1167,6 @@ if (orderPage) {
 }
 
 const categoriesBlock = document.querySelector('.categories-home-page');
-
 if (categoriesBlock) {
 	const categoriesItems = document.querySelectorAll('.categories-home-page__item');
 	categoriesItems.forEach(categoriesItem => {
@@ -1179,6 +1177,23 @@ if (categoriesBlock) {
 			if (!(e.target.classList.contains("_active"))) {
 				for (let i = 0; i < categoriesItems.length; i++) {
 					const element = categoriesItems[i];
+					element.classList.remove("_active")
+				}
+				item.classList.add("_active")
+			}
+		});
+	})
+}
+
+const actionsHeader = document.querySelector('.actions-header');
+if (actionsHeader) {
+	const serverItems = document.querySelectorAll('.actions-header__server');
+	serverItems.forEach(serverItem => {
+		serverItem.addEventListener("click", function (e) {
+			let item = e.target.closest('.actions-header__server')
+			if (!(e.target.classList.contains("_active"))) {
+				for (let i = 0; i < serverItems.length; i++) {
+					const element = serverItems[i];
 					element.classList.remove("_active")
 				}
 				item.classList.add("_active")
